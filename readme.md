@@ -8,7 +8,7 @@
 
   - Four data servers
 
-![](project4_pic1.png)
+![](img/project4_pic1.png)
 
 - **Mini-DFS is running through a process. In this process, the name server and data servers are different threads**
 
@@ -32,7 +32,7 @@
 
 - **Name Server**
 
-- - List the relationships between file and chunks
+  - List the relationships between file and chunks
   - List the relationships between replicas and data servers
   - Data server management
 
