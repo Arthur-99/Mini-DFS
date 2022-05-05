@@ -19,7 +19,7 @@
   - **Upload** a file: upload success and return the ID of the file
   - **Read** the location of a file based on the file ID and the offset
 
-- File striping
+- **File striping**
 
     - Slicing a file into several chunks
     - Each chunk is 2MB
