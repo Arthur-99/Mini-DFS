@@ -1,9 +1,5 @@
 # Mini-DFS
 
-[TOC]
-
-### Functions
-
 - **A Mini Distributed File System (Mini-DFS), which contains**
 
   - A client
@@ -18,20 +14,20 @@
 
 - **Basic functions of Mini-DFS**
 
-- - Read/write a file
+  - Read/write a file
 
-  - - **Upload** a file: upload success and return the ID of the file
-    - **Read** the location of a file based on the file ID and the offset
+  - **Upload** a file: upload success and return the ID of the file
+  - **Read** the location of a file based on the file ID and the offset
 
-  - File striping
+- File striping
 
-  - - Slicing a file into several chunks
+    - Slicing a file into several chunks
     - Each chunk is 2MB
     - Uniform distribution of these chunks among four data servers
 
   - Replication
 
-  - - Each chunk has three replications
+    - Each chunk has three replications
     - Replicas are distributed in different data servers
 
 - **Name Server**
@@ -42,12 +38,12 @@
 
 - **Data Server**
 
-- - Read/Write a local chunk
+  - Read/Write a local chunk
   - Write a chunk via a local directory path
 
 - **Client**
 
-- - Provide read/write interfaces of a file
+  - Provide read/write interfaces of a file
 
 - **directory management**
 
@@ -56,17 +52,17 @@
 
 - **Recovery**
 
-- - Delete a data server (three data servers survive)
+  - Delete a data server (three data servers survive)
   - Recover the data in the lost data server
   - Redistribute the data and ensure each chunk has three replicas
 
-### Requirements
+## Requirements
 
 ```
 colorama==0.4.4 # colorful print
 ```
 
-### Examples
+## Examples
 
 #### Client Prompt
 
